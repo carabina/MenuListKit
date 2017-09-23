@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'MenuListKit_Example' do
+  pod 'MenuListKit', :path => '../'
+end

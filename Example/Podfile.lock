@@ -1,0 +1,23 @@
+PODS:
+  - IGListKit (3.0.0):
+    - IGListKit/Default (= 3.0.0)
+  - IGListKit/Default (3.0.0):
+    - IGListKit/Diffing
+  - IGListKit/Diffing (3.0.0)
+  - MenuListKit (0.0.1):
+    - IGListKit (~> 3.0.0)
+
+DEPENDENCIES:
+  - MenuListKit (from `../`)
+
+EXTERNAL SOURCES:
+  MenuListKit:
+    :path: ../
+
+SPEC CHECKSUMS:
+  IGListKit: 9eab6856a15fa25ad72018ff9d9eb2178c240fff
+  MenuListKit: dfb248dc51899f8a98c83cdc8a05c9ddb0ca9975
+
+PODFILE CHECKSUM: a02590685bb75348ac30419ec33ea2e645984a41
+
+COCOAPODS: 1.3.1

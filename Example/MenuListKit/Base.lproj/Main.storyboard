@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="89d-sD-aGX">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Demo View Controller-->
+        <scene sceneID="NL8-6F-d9o">
+            <objects>
+                <viewController id="89d-sD-aGX" customClass="DemoViewController" customModule="MenuListKit_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jc1-bQ-wVG"/>
+                        <viewControllerLayoutGuide type="bottom" id="JvQ-PB-z6k"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5BS-ZQ-ZAz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sLt-9q-syf">
+                                <rect key="frame" x="32" y="28" width="311" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="reloadData:" destination="89d-sD-aGX" eventType="touchUpInside" id="ITP-Nq-mXJ"/>
+                                </connections>
+                            </button>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WFZ-fL-EUa">
+                                <rect key="frame" x="0.0" y="66" width="375" height="601"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="AQS-La-bCX">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="nRU-F3-CG5">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WFZ-fL-EUa" secondAttribute="trailing" id="5IW-2r-agD"/>
+                            <constraint firstItem="sLt-9q-syf" firstAttribute="top" secondItem="jc1-bQ-wVG" secondAttribute="bottom" constant="8" id="CcP-EC-F0G"/>
+                            <constraint firstItem="WFZ-fL-EUa" firstAttribute="leading" secondItem="5BS-ZQ-ZAz" secondAttribute="leading" id="L55-Yj-WiT"/>
+                            <constraint firstItem="sLt-9q-syf" firstAttribute="leading" secondItem="5BS-ZQ-ZAz" secondAttribute="leadingMargin" constant="16" id="WcK-pf-OV1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="sLt-9q-syf" secondAttribute="trailing" constant="16" id="We4-s7-x4w"/>
+                            <constraint firstItem="WFZ-fL-EUa" firstAttribute="top" secondItem="sLt-9q-syf" secondAttribute="bottom" constant="8" id="fsj-y4-aYg"/>
+                            <constraint firstItem="JvQ-PB-z6k" firstAttribute="top" secondItem="WFZ-fL-EUa" secondAttribute="bottom" id="kIF-q8-NzR"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="WFZ-fL-EUa" id="Q9S-OJ-aA3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Azj-cy-3BK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="50.824587706146929"/>
+        </scene>
+    </scenes>
+</document>
