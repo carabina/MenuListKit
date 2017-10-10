@@ -9,40 +9,23 @@ import IGListKit
 
 class DemoViewController: UIViewController {
     
-    var oldItems: [BaseItem & ListDiffable] = [
-    ListItem(title: "Vincolo", subtitle: "Beta"),
-    ListItem(title: "Circo", subtitle: "Ricco"),
-    ListItem(title: "Grumo", subtitle: "Bruno"),
-    ListItem(title: "222Creta", subtitle: "Beta"),
-    ListItem(title: "222Circo", subtitle: "Ricco")
-    ]
-    
-    var newItems: [BaseItem & ListDiffable] = [
-        ListItem(title: "Vincolo", subtitle: "Beta"),
-        ListItem(title: "Circo", subtitle: "Ricco"),
-        ListItem(title: "Grumo", subtitle: "Bruno nonononono"),
-        ListItem(title: "222Creta", subtitle: "Beta"),
-        ListItem(title: "222Circo", subtitle: "Ricco")
-    ]
-    
-    @IBAction func reloadData(_ sender: Any) {
-        oldItems = newItems
-        adapter.performUpdates(animated: true,completion: nil)
-    }
-    
-    var menuGroup: MenuGroup!
-    
     @IBOutlet weak var collectionView: UICollectionView!
     
     lazy var adapter: MenuListAdapter = {
         return MenuListAdapter(viewController: self)
     }()
     
+    lazy var items: [ListDiffable & BaseItem] = [
+        Item(text: "Empty View", controller: EmptyViewController.self, actionDelegate: self)
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         adapter.collectionView = collectionView
         adapter.dataSource = self
+        
+        self.title = "Demos"
         
     }
     
@@ -56,17 +39,7 @@ class DemoViewController: UIViewController {
 extension DemoViewController: MenuListAdapterDataSource {
     
     func objects(for menuListAdapter: MenuListAdapter) -> [ListDiffable & BaseItem] {
-        
-        return [
-            MenuGroup(identifier:"menu",
-                      header: nil,
-                      items: oldItems,
-                      emptyItem: ListItem(title: "No iTems", subtitle: "Beta"),
-                      marginTop: 40,
-                      marginBottom: 100,
-                      spaceBetweenCells: 0)
-        ]
-        
+        return items
     }
     
     func emptyView(for menuListAdapter: MenuListAdapter) -> UIView? {
@@ -75,3 +48,13 @@ extension DemoViewController: MenuListAdapterDataSource {
     
 }
 
+extension DemoViewController: MenuActionDelegate {
+    
+    func didSelect(item: BaseItem) {
+        guard let demoItem = item as? Item else { return }
+        let controller = demoItem.controller.init()
+        controller.title = demoItem.text
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
+}

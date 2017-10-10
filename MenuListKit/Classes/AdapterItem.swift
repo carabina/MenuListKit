@@ -20,24 +20,24 @@ open class AdapterItem<Cell: UICollectionViewCell>: BaseItem {
     
     public var height: CGFloat
     
-    public var tapAction: Action?
+    public weak var actionDelegate: MenuActionDelegate?
     
     // MARK: - Initializer
     
     public init(height: CGFloat,
-                tapAction: Action? = nil) {
+                actionDelegate: MenuActionDelegate? = nil) {
         self.cell = .`class`
         self.height = height
-        self.tapAction = tapAction
+        self.actionDelegate = actionDelegate
     }
     
     public init(xibIdentifier: String = String(describing: Cell.self),
                 bundle: Bundle,
                 height: CGFloat,
-                tapAction: Action? = nil) {
+                actionDelegate: MenuActionDelegate? = nil) {
         self.cell = .xib(identifier: xibIdentifier, bundle: bundle)
         self.height = height
-        self.tapAction = tapAction
+        self.actionDelegate = actionDelegate
     }
     
     open func bind(to cell: Cell) { }

@@ -33,7 +33,7 @@ open class BaseSectionController: ListSectionController {
     }
     
     open override func didSelectItem(at index: Int) {
-        model?.tapAction?()
+        model?.actionDelegate?.didSelect(item: model)
     }
     
     open override func sizeForItem(at index: Int) -> CGSize {

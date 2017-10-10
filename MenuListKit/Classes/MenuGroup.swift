@@ -19,7 +19,7 @@ open class MenuGroup: BaseItem, ListDiffable {
 
     public var height: CGFloat = 0.0
     
-    public var tapAction: Action?
+    public weak var actionDelegate: MenuActionDelegate?
     
     public var identifier: String
     

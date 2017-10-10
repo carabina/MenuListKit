@@ -37,6 +37,14 @@ open class MenuListAdapter: NSObject {
         adapter.performUpdates(animated: animated, completion: completion)
     }
     
+    public func section(for sectionController: ListSectionController) -> Int {
+        return adapter.section(for: sectionController)
+    }
+    
+    public func object(atSection section: Int) -> Any? {
+        return adapter.object(atSection: section)
+    }
+    
 }
 
 extension MenuListAdapter: ListAdapterDataSource {

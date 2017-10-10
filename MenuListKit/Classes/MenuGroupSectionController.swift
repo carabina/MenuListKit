@@ -72,6 +72,6 @@ extension MenuGroupSectionController: ListBindingSectionControllerDataSource {
 extension MenuGroupSectionController: ListBindingSectionControllerSelectionDelegate {
     func sectionController(_ sectionController: ListBindingSectionController<ListDiffable>, didSelectItemAt index: Int, viewModel: Any) {
         let item = viewModel as! BaseItem
-        item.tapAction?()
+        item.actionDelegate?.didSelect(item: item)
     }
 }
