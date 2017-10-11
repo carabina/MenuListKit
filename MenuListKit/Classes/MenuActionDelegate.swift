@@ -7,5 +7,5 @@ import Foundation
 import IGListKit
 
 public protocol MenuActionDelegate: class {
-    func didSelect(item: BaseItem)
+    func didSelect(item: BaseMenuItem)
 }

@@ -6,7 +6,7 @@
 import Foundation
 import IGListKit
 
-open class AdapterItem<Cell: UICollectionViewCell>: BaseItem {
+open class MenuItem<Cell: UICollectionViewCell>: BaseMenuItem {
 
     // MARK: - Internal properites
     
@@ -52,7 +52,7 @@ open class AdapterItem<Cell: UICollectionViewCell>: BaseItem {
 extension UICollectionViewCell: ListBindable {
     
     public func bindViewModel(_ viewModel: Any) {
-        if let adapterItem = viewModel as? BaseItem {
+        if let adapterItem = viewModel as? BaseMenuItem {
             adapterItem.bind(to: self)
         }
     }

@@ -60,7 +60,7 @@ extension MenuListAdapter: ListAdapterDataSource {
         if let menu = object as? MenuGroup {
             return MenuGroupSectionController(object: menu)
         } else {
-             return BaseSectionController()
+             return BaseMenuItemSectionController()
         }
     }
     
@@ -74,6 +74,6 @@ extension MenuListAdapter: ListAdapterDataSource {
 }
 
 public protocol MenuListAdapterDataSource: class {
-    func objects(for menuListAdapter: MenuListAdapter) -> [BaseItem & ListDiffable]
+    func objects(for menuListAdapter: MenuListAdapter) -> [BaseMenuItem & ListDiffable]
     func emptyView(for menuListAdapter: MenuListAdapter) -> UIView?
 }

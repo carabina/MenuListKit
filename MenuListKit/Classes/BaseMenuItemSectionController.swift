@@ -6,12 +6,12 @@
 import Foundation
 import IGListKit
 
-open class BaseSectionController: ListSectionController {
+open class BaseMenuItemSectionController: ListSectionController {
     
-    var model: BaseItem!
+    var model: BaseMenuItem!
 
     open override func didUpdate(to object: Any) {
-        model = object as? BaseItem
+        model = object as? BaseMenuItem
     }
     
     open override func cellForItem(at index: Int) -> UICollectionViewCell {

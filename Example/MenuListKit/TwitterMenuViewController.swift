@@ -35,7 +35,7 @@ class TwitterMenuViewController: UIViewController {
 
 extension TwitterMenuViewController: MenuListAdapterDataSource {
     
-    func objects(for menuListAdapter: MenuListAdapter) -> [ListDiffable & BaseItem] {
+    func objects(for menuListAdapter: MenuListAdapter) -> [ListDiffable & BaseMenuItem] {
         return [
         
             ProfileHeaderItem(fullName: "MoonCoders",

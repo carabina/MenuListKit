@@ -10,7 +10,7 @@ import Foundation
 import MenuListKit
 import IGListKit
 
-class Item: AdapterItem<ItemCell>, ListDiffable {
+class Item: MenuItem<ItemCell>, ListDiffable {
     
     let text: String
     let controller: UIViewController.Type

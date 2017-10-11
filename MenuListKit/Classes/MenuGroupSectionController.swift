@@ -26,7 +26,7 @@ extension MenuGroupSectionController: ListBindingSectionControllerDataSource {
     func sectionController(_ sectionController: ListBindingSectionController<ListDiffable>, viewModelsFor object: Any) -> [ListDiffable] {
         guard let menu = object as? MenuGroup else { return [] }
 
-        var sources: [BaseItem & ListDiffable] = []
+        var sources: [BaseMenuItem & ListDiffable] = []
 
         if let header = menu.header {
             sources.append(header)
@@ -42,7 +42,7 @@ extension MenuGroupSectionController: ListBindingSectionControllerDataSource {
     }
 
     public func sectionController(_ sectionController: ListBindingSectionController<ListDiffable>, cellForViewModel viewModel: Any, at index: Int) -> UICollectionViewCell & ListBindable {
-        let item = viewModel as! BaseItem
+        let item = viewModel as! BaseMenuItem
 
         var viewCell: UICollectionViewCell?
 
@@ -62,7 +62,7 @@ extension MenuGroupSectionController: ListBindingSectionControllerDataSource {
 
     public func sectionController(_ sectionController: ListBindingSectionController<ListDiffable>, sizeForViewModel viewModel: Any, at index: Int) -> CGSize{
         guard let context = collectionContext else { return CGSize.zero }
-        let item = viewModel as! BaseItem
+        let item = viewModel as! BaseMenuItem
         return CGSize(width: context.containerSize.width, height: item.height)
     }
 }
@@ -71,7 +71,7 @@ extension MenuGroupSectionController: ListBindingSectionControllerDataSource {
 
 extension MenuGroupSectionController: ListBindingSectionControllerSelectionDelegate {
     func sectionController(_ sectionController: ListBindingSectionController<ListDiffable>, didSelectItemAt index: Int, viewModel: Any) {
-        let item = viewModel as! BaseItem
+        let item = viewModel as! BaseMenuItem
         item.actionDelegate?.didSelect(item: item)
     }
 }

@@ -6,7 +6,7 @@
 import Foundation
 import IGListKit
 
-public protocol BaseItem: class {
+public protocol BaseMenuItem: class {
     
     var height: CGFloat { get }
     var cell: Resource { get }

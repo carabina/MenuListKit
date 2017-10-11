@@ -15,7 +15,7 @@ class DemoViewController: UIViewController {
         return MenuListAdapter(viewController: self)
     }()
     
-    lazy var items: [ListDiffable & BaseItem] = [
+    lazy var items: [ListDiffable & BaseMenuItem] = [
         Item(text: "Empty View", controller: EmptyViewController.self, actionDelegate: self),
         Item(text: "Twitter Menu", controller: TwitterMenuViewController.self, actionDelegate: self)
     ]
@@ -39,7 +39,7 @@ class DemoViewController: UIViewController {
 
 extension DemoViewController: MenuListAdapterDataSource {
     
-    func objects(for menuListAdapter: MenuListAdapter) -> [ListDiffable & BaseItem] {
+    func objects(for menuListAdapter: MenuListAdapter) -> [ListDiffable & BaseMenuItem] {
         return items
     }
     
@@ -51,7 +51,7 @@ extension DemoViewController: MenuListAdapterDataSource {
 
 extension DemoViewController: MenuActionDelegate {
     
-    func didSelect(item: BaseItem) {
+    func didSelect(item: BaseMenuItem) {
         guard let demoItem = item as? Item else { return }
         let controller = demoItem.controller.init()
         controller.title = demoItem.text

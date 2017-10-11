@@ -10,7 +10,7 @@ import Foundation
 import MenuListKit
 import IGListKit
 
-class CountItem: AdapterItem<CountCell>, ListDiffable {
+class CountItem: MenuItem<CountCell>, ListDiffable {
     
     let number: Int
     

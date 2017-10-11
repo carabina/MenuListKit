@@ -70,7 +70,7 @@ class EmptyViewController: UIViewController {
 
 extension EmptyViewController: MenuListAdapterDataSource {
     
-    func objects(for menuListAdapter: MenuListAdapter) -> [ListDiffable & BaseItem] {
+    func objects(for menuListAdapter: MenuListAdapter) -> [ListDiffable & BaseMenuItem] {
         return [
             
             MenuGroup(identifier: "ciao",
@@ -92,7 +92,7 @@ extension EmptyViewController: MenuListAdapterDataSource {
 
 extension EmptyViewController: MenuActionDelegate {
     
-    func didSelect(item: BaseItem) {
+    func didSelect(item: BaseMenuItem) {
         guard let countItem = item as? CountItem else { return }
         let index = data.index { $0.number == countItem.number }
         guard let unwrappedIndex = index else { return }

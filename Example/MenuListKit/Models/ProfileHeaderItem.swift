@@ -10,7 +10,7 @@ import Foundation
 import IGListKit
 import MenuListKit
 
-class ProfileHeaderItem: AdapterItem<ProfileHeaderCell>, ListDiffable {
+class ProfileHeaderItem: MenuItem<ProfileHeaderCell>, ListDiffable {
     
     let fullName: String
     let username: String
