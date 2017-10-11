@@ -12,6 +12,10 @@
 		17DCBC0E1F8CCE730004F6B7 /* EmptyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCBC0D1F8CCE730004F6B7 /* EmptyViewController.swift */; };
 		17DCBC121F8CD26D0004F6B7 /* CountItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCBC111F8CD26D0004F6B7 /* CountItem.swift */; };
 		17DCBC151F8CD2960004F6B7 /* CountCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCBC131F8CD2960004F6B7 /* CountCell.swift */; };
+		17DCBC391F8E4CFD0004F6B7 /* ProfileHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCBC371F8E4CFD0004F6B7 /* ProfileHeaderCell.swift */; };
+		17DCBC3A1F8E4CFD0004F6B7 /* ProfileHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17DCBC381F8E4CFD0004F6B7 /* ProfileHeaderCell.xib */; };
+		17DCBC3C1F8E51DD0004F6B7 /* ProfileHeaderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCBC3B1F8E51DD0004F6B7 /* ProfileHeaderItem.swift */; };
+		17DCBC3E1F8E55450004F6B7 /* TwitterMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17DCBC3D1F8E55450004F6B7 /* TwitterMenuViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* DemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* DemoViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -26,6 +30,10 @@
 		17DCBC0D1F8CCE730004F6B7 /* EmptyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewController.swift; sourceTree = "<group>"; };
 		17DCBC111F8CD26D0004F6B7 /* CountItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountItem.swift; sourceTree = "<group>"; };
 		17DCBC131F8CD2960004F6B7 /* CountCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountCell.swift; sourceTree = "<group>"; };
+		17DCBC371F8E4CFD0004F6B7 /* ProfileHeaderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderCell.swift; sourceTree = "<group>"; };
+		17DCBC381F8E4CFD0004F6B7 /* ProfileHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderCell.xib; sourceTree = "<group>"; };
+		17DCBC3B1F8E51DD0004F6B7 /* ProfileHeaderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderItem.swift; sourceTree = "<group>"; };
+		17DCBC3D1F8E55450004F6B7 /* TwitterMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterMenuViewController.swift; sourceTree = "<group>"; };
 		26F839A9AA9723B13467883D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4B2D36FF0B0C30D9D3A22C16 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4EAB3C861327ED3DB5F5EBFC /* Pods-MenuListKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuListKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MenuListKit_Example/Pods-MenuListKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +78,8 @@
 			children = (
 				17DCBC061F8CC9AE0004F6B7 /* ItemCell.swift */,
 				17DCBC131F8CD2960004F6B7 /* CountCell.swift */,
+				17DCBC371F8E4CFD0004F6B7 /* ProfileHeaderCell.swift */,
+				17DCBC381F8E4CFD0004F6B7 /* ProfileHeaderCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -79,6 +89,7 @@
 			children = (
 				17DCBC041F8CC23E0004F6B7 /* Item.swift */,
 				17DCBC111F8CD26D0004F6B7 /* CountItem.swift */,
+				17DCBC3B1F8E51DD0004F6B7 /* ProfileHeaderItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,6 +119,7 @@
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* DemoViewController.swift */,
 				17DCBC0D1F8CCE730004F6B7 /* EmptyViewController.swift */,
+				17DCBC3D1F8E55450004F6B7 /* TwitterMenuViewController.swift */,
 				17DCBC0A1F8CCC1C0004F6B7 /* Models */,
 				17DCBC081F8CCBED0004F6B7 /* Views */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -211,6 +223,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17DCBC3A1F8E4CFD0004F6B7 /* ProfileHeaderCell.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -284,9 +297,12 @@
 				17DCBC071F8CC9AE0004F6B7 /* ItemCell.swift in Sources */,
 				17DCBC051F8CC23E0004F6B7 /* Item.swift in Sources */,
 				607FACD81AFB9204008FA782 /* DemoViewController.swift in Sources */,
+				17DCBC391F8E4CFD0004F6B7 /* ProfileHeaderCell.swift in Sources */,
 				17DCBC121F8CD26D0004F6B7 /* CountItem.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				17DCBC151F8CD2960004F6B7 /* CountCell.swift in Sources */,
+				17DCBC3C1F8E51DD0004F6B7 /* ProfileHeaderItem.swift in Sources */,
+				17DCBC3E1F8E55450004F6B7 /* TwitterMenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -34,7 +34,7 @@ open class AdapterItem<Cell: UICollectionViewCell>: BaseItem {
     public init(xibIdentifier: String = String(describing: Cell.self),
                 bundle: Bundle,
                 height: CGFloat,
-                actionDelegate: MenuActionDelegate? = nil) {
+                actionDelegate: MenuActionDelegate?) {
         self.cell = .xib(identifier: xibIdentifier, bundle: bundle)
         self.height = height
         self.actionDelegate = actionDelegate
