@@ -34,7 +34,6 @@
 		17DCBC381F8E4CFD0004F6B7 /* ProfileHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderCell.xib; sourceTree = "<group>"; };
 		17DCBC3B1F8E51DD0004F6B7 /* ProfileHeaderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderItem.swift; sourceTree = "<group>"; };
 		17DCBC3D1F8E55450004F6B7 /* TwitterMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterMenuViewController.swift; sourceTree = "<group>"; };
-		26F839A9AA9723B13467883D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4B2D36FF0B0C30D9D3A22C16 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4EAB3C861327ED3DB5F5EBFC /* Pods-MenuListKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MenuListKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MenuListKit_Example/Pods-MenuListKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		5D07877CFEE52971F0BAE851 /* Pods_MenuListKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MenuListKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,7 +142,6 @@
 			isa = PBXGroup;
 			children = (
 				DACC081007A26CF8076920A2 /* MenuListKit.podspec */,
-				26F839A9AA9723B13467883D /* README.md */,
 				4B2D36FF0B0C30D9D3A22C16 /* LICENSE */,
 			);
 			name = "Podspec Metadata";

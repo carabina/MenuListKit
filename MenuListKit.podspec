@@ -12,16 +12,16 @@ Pod::Spec.new do |s|
   s.summary          = 'Declaratively create menus with less Swift code on iOS leveraging IGListKit'
 
   s.description      = <<-DESC
-A Kit to create fast and simple menu
+Declaratively create menus with less Swift code on iOS leveraging IGListKit
                        DESC
 
   s.homepage     = "https://github.com/MoonCoders/MenuListKit"
   s.license          = "Apache 2.0"
   s.author           = { 'mooncoders' => 'hello@mooncoders.co' }
-  s.source           = { :git => 'https://github.com/MoonCoders/MenuListKit', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/MoonCoders/MenuListKit.git', :tag => s.version.to_s }
 
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'MenuListKit/Classes/**/*'
 
