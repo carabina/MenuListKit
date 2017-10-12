@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MenuListKit'
   s.version          = '0.0.1'
-  s.summary          = 'A Kit to create fast and simple menu'
+  s.summary          = 'Declaratively create menus with less Swift code on iOS leveraging IGListKit'
 
   s.description      = <<-DESC
 A Kit to create fast and simple menu
