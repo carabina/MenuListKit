@@ -1,8 +1,21 @@
 ![](artwork/menu_list_kit.png)
 
+MenuListKit provides a fast way to create lists and menus with declerative programming in Swift. This project leverage on [IGListKit](https://github.com/Instagram/IGListKit).
+
+| | Features |
+:---: | --- |
+🚀 | Declaratively define lists and menu |
+🙏🏻 | The code reflects the UI |
+📁 | Less code and less files to manage |
+🔋 | Efficient cell updates thanks to `ListDiffable` by [IGListKit](https://github.com/Instagram/IGListKit) |
+
 ⚠️ WORK IN PROGRESS ⚠️
 
 ***
+
+The idea of MenuListKit is to provide a declerative way to create menus in iOS. [...]
+
+In the example below there's a classic and simple **ToDo List** app; as you can see the array of models reflects the cells in the `UICollectionView`.
 
 ![](artwork/code_sample1.png)
 
