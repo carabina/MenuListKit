@@ -17,7 +17,8 @@ class DemoViewController: UIViewController {
     
     lazy var items: [ListDiffable & BaseMenuItem] = [
         Item(text: "Empty View", controller: EmptyViewController.self, actionDelegate: self),
-        Item(text: "Twitter Menu", controller: TwitterMenuViewController.self, actionDelegate: self)
+        Item(text: "Twitter Menu", controller: TwitterMenuViewController.self, actionDelegate: self),
+        Item(text: "ToDo", controller: ToDoViewController.self, actionDelegate: self)
     ]
     
     override func viewDidLoad() {
