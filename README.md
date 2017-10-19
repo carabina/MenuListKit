@@ -11,7 +11,7 @@
         <img src="https://img.shields.io/badge/swift-4-orange.svg?style=flat-square" alt="Swift" />
     </a> 
     <img src="https://img.shields.io/badge/platforms-iOS%20%7C%20macOS%20%7C%20tvOS-333333.svg?style=flat-square" alt="platforms" />
-    <img src="https://img.shields.io/badge/license-Apache%202.0-000000.svg" alt="license" />
+    <img src="https://img.shields.io/badge/license-Apache%202.0-000000.svg?style=flat-square" alt="license" />
 </p>
 
 MenuListKit provides a fast way to create lists and menus with declarative programming in Swift. It's a thin abstraction layer over the powerful [IGListKit](https://github.com/Instagram/IGListKit).
