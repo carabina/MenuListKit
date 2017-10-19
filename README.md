@@ -78,9 +78,9 @@ class ToDoCell: UICollectionViewCell {
 
 In MenuListKit every cell is represented by a `MenuItem` object. The `MenuItem` class is a "model representation" of your cell. It contains all the information to configure the `UICollectionViewCell` view.
 
-Create your item class that inheritance from `MenuItem` and implement `ListDiffable` (from [IGListKit](https://instagram.github.io/IGListKit/iglistdiffable-and-equality.html)).
+Create your item class that inherits from `MenuItem` and implements `ListDiffable` (from [IGListKit](https://instagram.github.io/IGListKit/iglistdiffable-and-equality.html)).
 
-> Remember to write `import IGListKit` at the top
+> Remember to add `import IGListKit` at the top
 
 ```swift
 
@@ -125,10 +125,10 @@ class ToDoItem: MenuItem<ToDoCell>, ListDiffable {
 
 ### `MenuAdapterItem` and data source
 
-To load the array of model into a `UICollectionView`, we've reused the idea of IGListKit and we've created the `MenuListAdapter`.
+To load an array of models into a `UICollectionView`, we've reused the idea of IGListKit and we've created the `MenuListAdapter`.
 
-To all get the work done, implement the data source protocol `MenuListAdapterDataSource` to provide the array of models to the collectionView. The adapter will manage all insertions, deletions and updates base on the array.
-You can also provide a `UIView` to present when there's no data to show.
+To all get the work done, implement the data source protocol `MenuListAdapterDataSource` to provide the array of models to the collectionView. The adapter will manage all insertions, deletions and updates based on the array.
+You can also provide an `UIView` to present when there's no data to show.
 
 ```swift
 import MenuListKit
