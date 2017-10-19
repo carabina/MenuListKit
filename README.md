@@ -186,7 +186,7 @@ extension ToDoViewController: MenuListAdapterDataSource {
 
 ## About us
 
-<img src="/moon_medium_logo.png" width=30% />
+<img src="https://github.com/MoonCoders/resources/blob/master/moon_medium_logo.png" width=30% />
 
 We're 3 friends who love to work on open source projects 💙.
 
