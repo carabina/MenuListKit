@@ -1,19 +1,8 @@
-#
-# Be sure to run `pod lib lint MenuListKit.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'MenuListKit'
   s.version          = '0.0.1'
-  s.summary          = 'Declaratively create menus with less Swift code on iOS leveraging IGListKit'
-
-  s.description      = <<-DESC
-Declaratively create menus with less Swift code on iOS leveraging IGListKit
-                       DESC
+  s.summary          = 'A fast way to create lists and menus in Swift'
+  s.description      = 'A fast way to create lists and menus with declarative programming in Swift'
 
   s.homepage     = "https://github.com/MoonCoders/MenuListKit"
   s.license          = "Apache 2.0"
@@ -25,10 +14,5 @@ Declaratively create menus with less Swift code on iOS leveraging IGListKit
 
   s.source_files = 'MenuListKit/Classes/**/*'
 
-  # s.resource_bundles = {
-  #   'MenuListKit' => ['MenuListKit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.dependency 'IGListKit', '~> 3.0.0'
 end
