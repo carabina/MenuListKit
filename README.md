@@ -14,7 +14,7 @@ MenuListKit provides a fast way to create lists and menus with declarative progr
 
 ***
 
-The idea of MenuListKit is to provide a declarative way to create menus in iOS without writing boilerplate code. With MenuListKit you will spend less time thinking about how to load different cells, update them without a performance impact. Now you can focus on the artchitecture and business logic of your app 👍🏻.
+The idea of MenuListKit is to provide a declarative way to create menus in iOS without writing boilerplate code. With MenuListKit you can better focus on the architecture and the business logic of your app 👍🏻 without losing time to write the same error-prone boilerplate code. The final result is more maintainable and modular codebase. Give it a shot and see the difference!
 
 In the example below there's a classic and simple **ToDo List** app; as you can see the array of models reflects the cells in the `UICollectionView`. This will make you code more explicit and readable.
 
