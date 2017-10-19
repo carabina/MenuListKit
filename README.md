@@ -184,13 +184,17 @@ extension ToDoViewController: MenuListAdapterDataSource {
 * Download our [example app](https://github.com/MoonCoders/MenuListKit/tree/master/Example)
 * [Getting started guide](https://github.com/Instagram/IGListKit#getting-started) with IGListKit
 
-## Core Team
+## About us
 
-* Andrea Antonioni ([**@andreaantonioni**](https://github.com/andreaantonioni))
+<img src="/moon_medium_logo.png" width=30% />
 
+We're 3 friends who love to work on open source projects 💙.
+
+* Andrea Antonioni ([**@andrea_anto97**](https://twitter.com/andrea_anto97))
 * Kristiyan Petrov ([**@kristiyanP**](https://github.com/kristiyanP))
-
 * Alex Gotev ([**@gotev**](https://github.com/gotev))
+
+Get in touch with us saying hi 👋🏻 at [hello@mooncoders.co](mailto:hello@mooncoders.co). We're also on [Medium](https://medium.com/mooncoders) 🖊
 
 ## Contributing
 
