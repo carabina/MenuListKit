@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import MenuListKit
+import IGMenuListKit
 import IGListKit
 
 class ToDoItem: MenuItem<ToDoCell>, ListDiffable {

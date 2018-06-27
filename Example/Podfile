@@ -1,5 +1,7 @@
+platform :ios, '10.0'
+
 use_frameworks!
 
 target 'MenuListKit_Example' do
-  pod 'MenuListKit', :path => '../'
+  pod 'IGMenuListKit', :path => '../'
 end

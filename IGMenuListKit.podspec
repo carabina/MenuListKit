@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
 
   s.source_files = 'MenuListKit/Classes/**/*'
 
-  s.dependency 'IGListKit', '~> 3.0.0'
+  s.dependency 'IGListKit', '~> 3.4.0'
 end

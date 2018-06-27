@@ -99,7 +99,7 @@ Create your item class that inherits from `MenuItem` and implements `ListDiffabl
 
 ```swift
 
-import MenuListKit
+import IGMenuListKit
 import IGListKit
 
 class ToDoItem: MenuItem<ToDoCell>, ListDiffable {
@@ -146,7 +146,7 @@ To all get the work done, implement the data source protocol `MenuListAdapterDat
 You can also provide an `UIView` to present when there's no data to show.
 
 ```swift
-import MenuListKit
+import IGMenuListKit
 import IGListKit
 
 class ToDoViewController: UIViewController {
