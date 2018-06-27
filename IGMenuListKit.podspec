@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'IGMenuListKit'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'A fast way to create lists and menus in Swift'
   s.description      = 'A fast way to create lists and menus with declarative programming in Swift'
 
