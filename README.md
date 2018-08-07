@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="artwork/menu_list_kit.png" width=80%/>
+  <img src="https://github.com/iGenius-Srl/MenuListKit/blob/master/artwork/menu_list_kit.png" width=80%/>
 </p>
 
 <p align="center">
     <a href="https://dashboard.buddybuild.com/apps/59e8c206d51a9e0001da3a64/build/latest?branch=master">
         <img src="https://dashboard.buddybuild.com/api/statusImage?appID=59e8c206d51a9e0001da3a64&amp;branch=master&amp;build=latest" alt="BuddyBuild" />
     </a>
-    <img src="https://img.shields.io/cocoapods/v/MenuListKit.svg?style=flat-square" alt="pod" />
+    <img src="https://img.shields.io/cocoapods/v/IGMenuListKit.svg?style=flat-square" alt="pod" />
     <a href="https://developer.apple.com/swift/">
         <img src="https://img.shields.io/badge/swift-4-orange.svg?style=flat-square" alt="Swift" />
     </a> 
@@ -39,7 +39,7 @@ Give it a shot and see the difference 🎉!
 
 In the example below there's a classic and simple **ToDo List** app; as you can see the array of models reflects the cells in the `UICollectionView`. This will make you code more explicit and readable.
 
-![](artwork/code_sample1.png)
+![](https://github.com/iGenius-Srl/MenuListKit/blob/master/artwork/code_sample1.png)
 
 ## Requirements
 
@@ -202,20 +202,18 @@ extension ToDoViewController: MenuListAdapterDataSource {
 
 ## More resources
 
-* Download our [example app](https://github.com/MoonCoders/MenuListKit/tree/master/Example)
+* Download our [example app](https://github.com/iGenius-Srl/MenuListKit/tree/master/Example)
 * [Getting started guide](https://github.com/Instagram/IGListKit#getting-started) with IGListKit
 
 ## About us
 
-<img src="https://github.com/MoonCoders/resources/blob/master/moon_medium_logo.png" width=30% />
+This Repo is forked from  https://github.com/MoonCoders/MenuListKit and is currently maintined by iGenius.
 
-We're 3 friends who love to work on open source projects 💙.
+Original Authors:
 
 * Andrea Antonioni ([**@andrea_anto97**](https://twitter.com/andrea_anto97))
 * Kristiyan Petrov ([**@kristiyanP**](https://github.com/kristiyanP))
 * Alex Gotev ([**@gotev**](https://github.com/gotev))
-
-Get in touch with us saying hi 👋🏻 at [hello@mooncoders.co](mailto:hello@mooncoders.co). We're also on [Medium](https://medium.com/mooncoders) 🖊
 
 ## Contributing
 
