@@ -8,7 +8,7 @@
 
 import Foundation
 import IGListKit
-import MenuListKit
+import IGMenuListKit
 
 class ProfileHeaderItem: MenuItem<ProfileHeaderCell>, ListDiffable {
     

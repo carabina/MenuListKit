@@ -4,7 +4,7 @@
 //
 
 import UIKit
-import MenuListKit
+import IGMenuListKit
 import IGListKit
 
 class DemoViewController: UIViewController {

@@ -74,4 +74,10 @@ extension MenuGroupSectionController: ListBindingSectionControllerSelectionDeleg
         let item = viewModel as! BaseMenuItem
         item.actionDelegate?.didSelect(item: item)
     }
+
+    func sectionController(_ sectionController: ListBindingSectionController<ListDiffable>, didHighlightItemAt index: Int, viewModel: Any) {}
+
+    func sectionController(_ sectionController: ListBindingSectionController<ListDiffable>, didDeselectItemAt index: Int, viewModel: Any) {}
+
+    func sectionController(_ sectionController: ListBindingSectionController<ListDiffable>, didUnhighlightItemAt index: Int, viewModel: Any) {}
 }
